@@ -413,6 +413,47 @@ body.page-news {
   font-size: 1rem;
 }
 
+/* News posts section */
+.news-posts {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.news-post {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  border-left: 5px solid #0052cc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.news-post:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.news-post-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.news-post-title {
+  font-size: 1.5rem;
+  color: #0052cc;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.news-post-content {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
 /* フッター */
 .footer {
   background-color: #333;
