@@ -418,58 +418,53 @@ body.page-news {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1.5rem;
-  background: 
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 255, 0, 0.03) 0px,
-      rgba(0, 255, 0, 0.03) 1px,
-      transparent 1px,
-      transparent 2px
-    );
 }
 
 .news-post {
-  padding: 2rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border: 4px solid #00ff00;
-  border-radius: 0;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 0 2px #00ff00, 0 0 20px rgba(0, 255, 0, 0.5), inset 0 0 10px rgba(0, 255, 0, 0.1);
-  transition: all 0.2s ease;
   position: relative;
-  font-family: 'Courier New', monospace;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
-.news-post:hover {
-  box-shadow: 0 0 0 2px #00ff00, 0 0 30px rgba(0, 255, 0, 0.8), inset 0 0 15px rgba(0, 255, 0, 0.2);
-  transform: translateY(-2px);
+.news-post-inner {
+  position: relative;
+  padding: 2.5rem 2rem;
+  background: url("images/bukatu.png") no-repeat center top;
+  background-size: cover;
+  border-radius: 24px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.news-post::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.35), transparent 45%);
+  pointer-events: none;
 }
 
 .news-post-date {
-  font-size: 0.85rem;
-  color: #00ff00;
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-  font-family: 'Courier New', monospace;
-  text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+  font-size: 0.95rem;
+  color: #4d3a1b;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .news-post-title {
-  font-size: 1.5rem;
-  color: #ffff00;
+  font-size: 2rem;
+  color: #36240f;
   margin-bottom: 1rem;
-  font-weight: 700;
-  font-family: 'Courier New', monospace;
-  text-shadow: 0 0 10px rgba(255, 255, 0, 0.6);
-  letter-spacing: 0.05em;
+  font-weight: 800;
 }
 
 .news-post-content {
-  color: #00ff00;
-  line-height: 1.8;
-  font-size: 1rem;
-  font-family: 'Courier New', monospace;
-  text-shadow: 0 0 8px rgba(0, 255, 0, 0.4);
+  color: #4a3823;
+  line-height: 1.9;
+  font-size: 1.05rem;
 }
 
 /* フッター */
