@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>社内ホームページ</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- ヘッダー -->
@@ -15,7 +16,15 @@
       <nav class="navbar">
         <ul class="nav-list">
           <li><a href="#top">TOP</a></li>
-          <li><a href="#materials">社内資料</a></li>
+          <li class="has-submenu">
+            <a href="#materials" class="submenu-toggle">社内資料</a>
+            <ul class="submenu">
+              <li><a href="#org">組織図</a></li>
+              <li><a href="#rules">規定</a></li>
+              <li><a href="#training">教育資料</a></li>
+              <li><a href="#newsletter">社内報</a></li>
+            </ul>
+          </li>
           <li><a href="#news">News</a></li>
           <li><a href="#outside">業務外</a></li>
         </ul>

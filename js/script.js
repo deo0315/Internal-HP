@@ -32,6 +32,23 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.backgroundColor = '#f9f9f9';
     });
   });
+
+  // 社内資料サブメニューの開閉
+  const submenuToggles = document.querySelectorAll('.submenu-toggle');
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      const parent = this.closest('.has-submenu');
+      parent.classList.toggle('open');
+    });
+  });
+
+  // クリックで外側を閉じる
+  document.addEventListener('click', function(e) {
+    document.querySelectorAll('.has-submenu.open').forEach(openEl => {
+      if (!openEl.contains(e.target)) openEl.classList.remove('open');
+    });
+  });
 });
 
 // スクロール位置に応じたナビゲーション背景色変更
