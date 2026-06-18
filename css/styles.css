@@ -53,6 +53,7 @@ a:hover {
 /* Header / submenu font (uses local font named 'KHドット秋葉原' if installed) */
 .header, .nav-list, .nav-list a, .submenu, .submenu a {
   font-family: 'Baloo 2', "KHドット秋葉原", "KH Dot Akihabara", 'Poppins', sans-serif;
+  font-size: 1.05rem;
 }
 
 .logo h1 {
