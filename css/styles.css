@@ -118,7 +118,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.32);
+  background-color: rgba(0, 0, 0, 0.12);
   z-index: 1;
 }
 
@@ -132,6 +132,7 @@ a:hover {
   padding: 0 1rem;
   z-index: 2;
   position: relative;
+  background: transparent;
 }
 
 .hero-text {
