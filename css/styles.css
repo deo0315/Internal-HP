@@ -29,8 +29,8 @@ a:hover {
 
 /* ヘッダー */
 .header {
-  background-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -90,6 +90,7 @@ a:hover {
   font-weight: bold;
   transition: background-color 0.3s ease;
   display: inline-block;
+  margin-left: auto;
 }
 
 .contact-btn:hover {
