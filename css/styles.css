@@ -98,10 +98,7 @@ a:hover {
 
 /* ヒーロー/イメージセクション */
 .hero-section {
-  background-image: url("../images/page-top.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.12);
   min-height: 85vh;
   display: flex;
   align-items: center;
