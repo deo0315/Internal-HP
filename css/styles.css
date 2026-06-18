@@ -7,7 +7,7 @@
 
 /* 基本スタイル */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   background-image: url("../images/page-top.png");
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .hero-section {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.12);
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -136,7 +136,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.12);
   z-index: 1;
 }
   color: rgba(255, 255, 255, 0.85);
@@ -180,18 +180,18 @@ a:hover {
 }
 
 /* メインコンテンツ */
-.main-content {
-  max-width: 1400px;
-  margin: 0 auto;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px;
   padding: 0 1.5rem;
+  z-index: 2;
+  position: relative;
+  background: transparent;
 }
-
-.section {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 2.5rem;
-  margin-bottom: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .section h2 {
@@ -255,33 +255,36 @@ a:hover {
   gap: 1.5rem;
 }
 
-.news-item {
-  padding: 1.5rem;
-  border-left: 4px solid #ff6600;
-  background: linear-gradient(135deg, #fff9f5 0%, #fffcfa 100%);
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-weight: 700;
 }
 
-.news-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.15);
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(4.5rem, 10vw, 9.5rem);
+  color: white;
+  margin-bottom: 1.25rem;
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, 0.45);
 }
 
-.news-item h3 {
-  color: #0052cc;
-  margin-bottom: 0.5rem;
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: 760px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
 }
-
-.news-item .date {
-  color: #999;
-  font-size: 0.85rem;
-  margin-bottom: 0.75rem;
-}
-
-/* リンク集セクション */
-.links-grid {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
