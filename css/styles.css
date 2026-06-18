@@ -46,6 +46,10 @@ a:hover {
   padding: 1rem 1.5rem;
 }
 
+.header-container {
+  position: relative;
+}
+
 .logo h1 {
   font-size: 1.5rem;
   color: #0052cc;
@@ -71,33 +75,31 @@ a:hover {
   margin: 0;
 }
 
-.has-submenu {
-  position: relative;
-}
-
 .submenu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
+  left: 0;
   right: 0;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
   list-style: none;
-  padding: 0.5rem 0;
-  min-width: 160px;
+  padding: 0.75rem 0;
   display: none;
   z-index: 200;
 }
 
+.submenu {
+  display: none;
+}
+
 .submenu li {
-  padding: 0;
+  display: inline-block;
 }
 
 .submenu a {
-  display: block;
-  padding: 0.6rem 1rem;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
   color: #333;
-  white-space: nowrap;
 }
 
 .submenu a:hover {
@@ -105,7 +107,9 @@ a:hover {
 }
 
 .has-submenu.open > .submenu {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 .nav-list a {
