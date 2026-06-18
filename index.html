@@ -3,20 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internal HP</title>
+  <title>社内ホームページ</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>社内ホームページ</h1>
-    <p>ここに社内向けのお知らせやリンクを掲載します。</p>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-content">
+      <h1 class="header-title">社内ホームページ</h1>
+      <p class="header-subtitle">従業員向けの情報ポータル</p>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>概要</h2>
-      <p>このサイトは社内向けのホームページです。必要な情報をここにまとめます。</p>
+
+  <!-- ナビゲーション -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#news">お知らせ</a></li>
+      <li><a href="#links">リンク集</a></li>
+      <li><a href="#info">社内情報</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main class="main-content">
+    <!-- お知らせセクション -->
+    <section class="section" id="news">
+      <h2>お知らせ</h2>
+      <div class="news-list">
+        <article class="news-item">
+          <h3>新着情報</h3>
+          <p class="date">2026年6月18日</p>
+          <p>社内ホームページをリニューアルしました。</p>
+        </article>
+        <article class="news-item">
+          <h3>重要なお知らせ</h3>
+          <p class="date">2026年6月17日</p>
+          <p>システムメンテナンスのお知らせです。詳しくは担当部署にお問い合わせください。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- リンク集セクション -->
+    <section class="section" id="links">
+      <h2>リンク集</h2>
+      <div class="links-grid">
+        <a href="#" class="link-card">
+          <h3>人事・給与</h3>
+          <p>給与情報や福利厚生について</p>
+        </a>
+        <a href="#" class="link-card">
+          <h3>IT・システム</h3>
+          <p>システムやツールの利用方法</p>
+        </a>
+        <a href="#" class="link-card">
+          <h3>施設・設備</h3>
+          <p>社内施設の利用方法</p>
+        </a>
+        <a href="#" class="link-card">
+          <h3>研修・教育</h3>
+          <p>研修情報やオンライン学習</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 社内情報セクション -->
+    <section class="section" id="info">
+      <h2>社内情報</h2>
+      <div class="info-container">
+        <div class="info-box">
+          <h3>会社概要</h3>
+          <p>会社の基本情報や組織体制についてご紹介します。</p>
+        </div>
+        <div class="info-box">
+          <h3>イベント・行事</h3>
+          <p>社内イベントや行事の予定表です。</p>
+        </div>
+        <div class="info-box">
+          <h3>規程・ルール</h3>
+          <p>社内ルールや就業規則をご確認ください。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section class="section" id="contact">
+      <h2>お問い合わせ</h2>
+      <p>ご不明な点やご質問がある場合は、以下の連絡先までお問い合わせください。</p>
+      <div class="contact-info">
+        <p><strong>メールアドレス:</strong> info@company.com</p>
+        <p><strong>電話番号:</strong> 000-0000-0000</p>
+        <p><strong>営業時間:</strong> 平日 9:00～17:30</p>
+      </div>
     </section>
   </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; 2026 Company Name. All rights reserved.</p>
+  </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
