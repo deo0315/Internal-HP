@@ -207,12 +207,13 @@ a:hover {
 .latest-popup {
   position: relative;
   padding: 2rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
   border-radius: 24px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
   max-width: 720px;
   margin: 0 auto 2rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .popup-header {
