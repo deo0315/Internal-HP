@@ -29,8 +29,8 @@ a:hover {
 
 /* ヘッダー */
 .header {
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -136,7 +136,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.30);
   z-index: 1;
 }
   color: rgba(255, 255, 255, 0.85);
