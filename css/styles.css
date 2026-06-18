@@ -50,6 +50,11 @@ a:hover {
   position: relative;
 }
 
+/* Header / submenu font (uses local font named 'KHドット秋葉原' if installed) */
+.header, .nav-list, .nav-list a, .submenu, .submenu a {
+  font-family: "KHドット秋葉原", "KH Dot Akihabara", 'Poppins', sans-serif;
+}
+
 .logo h1 {
   font-size: 1.5rem;
   color: #0052cc;
