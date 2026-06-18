@@ -46,6 +46,13 @@ a:hover {
   margin: 0;
 }
 
+.logo .confidential-notice {
+  font-size: 0.75rem;
+  color: #ff0000;
+  margin: 0.25rem 0 0 0;
+  font-weight: bold;
+}
+
 .navbar {
   flex: 1;
   margin: 0 2rem;
