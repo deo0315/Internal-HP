@@ -32,6 +32,10 @@ body.page-news {
   background-image: url("../images/news.png");
 }
 
+body.page-club {
+  background-image: url("../images/bukatu.png");
+}
+
 /* ヘッダー */
 .header {
   background: white;
