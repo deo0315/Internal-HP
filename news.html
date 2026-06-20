@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News - 社内ホームページ</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/page-tab.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +25,13 @@
               <li><a href="newsletter.html">社内報</a></li>
             </ul>
           </li>
-          <li><a href="news.html">News</a></li>
+          <li class="has-submenu">
+            <a href="news.html" class="submenu-toggle">News</a>
+            <ul class="submenu">
+              <li><a href="news.html">一覧</a></li>
+              <li><a href="news-post.html">投稿</a></li>
+            </ul>
+          </li>
           <li class="has-submenu">
             <a href="#" class="submenu-toggle">業務外</a>
             <ul class="submenu">
@@ -39,20 +46,22 @@
   </header>
 
   <main class="main-content">
-    <section class="section">
+    <section class="section news-title-section">
       <div class="hero-content">
-        <h1>News</h1>
-        <p>社内のお知らせ・更新情報を掲載するページです。</p>
+        <div class="news-title-banner">
+          <h1 class="news-page-title">News</h1>
+        </div>
       </div>
     </section>
 
-    <section class="news-posts">
+    <section id="newsList" class="news-posts">
       <article class="news-post">
         <div class="news-post-inner">
           <div class="news-post-date">2026年6月19日</div>
+          <div class="news-post-category">お知らせ</div>
           <h2 class="news-post-title">TEST</h2>
           <div class="news-post-content">
-            これはテスト投稿です
+            これはテスト投稿です。
           </div>
         </div>
       </article>

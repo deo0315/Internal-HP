@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>部活動 - 社内ホームページ</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/page-tab.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +25,13 @@
               <li><a href="newsletter.html">社内報</a></li>
             </ul>
           </li>
-          <li><a href="news.html">News</a></li>
+          <li class="has-submenu">
+            <a href="news.html" class="submenu-toggle">News</a>
+            <ul class="submenu">
+              <li><a href="news.html">一覧</a></li>
+              <li><a href="news-post.html">投稿</a></li>
+            </ul>
+          </li>
           <li class="has-submenu">
             <a href="#" class="submenu-toggle">業務外</a>
             <ul class="submenu">
@@ -39,10 +46,11 @@
   </header>
 
   <main class="main-content">
-    <section class="section">
+    <section class="section page-title-section">
       <div class="hero-content">
-        <h1>部活動</h1>
-        <p>社内の部活動紹介ページです。活動内容・連絡先を掲載してください。</p>
+        <div class="title-banner">
+          <h1 class="page-title">部活動</h1>
+        </div>
       </div>
     </section>
   </main>

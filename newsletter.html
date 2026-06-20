@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>社内報 - 社内ホームページ</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/page-tab.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
-<body>
+<body class="page-office-doc">
   <header class="header">
     <div class="header-container">
       <div class="logo"></div>
@@ -24,7 +26,13 @@
               <li><a href="newsletter.html">社内報</a></li>
             </ul>
           </li>
-          <li><a href="news.html">News</a></li>
+          <li class="has-submenu">
+            <a href="news.html" class="submenu-toggle">News</a>
+            <ul class="submenu">
+              <li><a href="news.html">一覧</a></li>
+              <li><a href="news-post.html">投稿</a></li>
+            </ul>
+          </li>
           <li class="has-submenu">
             <a href="#" class="submenu-toggle">業務外</a>
             <ul class="submenu">
@@ -39,10 +47,152 @@
   </header>
 
   <main class="main-content">
-    <section class="section">
+    <section class="section page-title-section">
       <div class="hero-content">
-        <h1>社内報</h1>
-        <p>過去の社内報や最新号はこちらで確認できます。</p>
+        <div class="title-banner">
+          <h1 class="page-title">社内報</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter-content">
+      <div class="newsletter-list">
+        <h2>社内報一覧</h2>
+        <div class="newsletter-items">
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.11.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.11</h3>
+                <span class="newsletter-item-date">最新版</span>
+              </div>
+              <p class="newsletter-item-description">最新号の社内報です。</p>
+              <a href="doc/社内報/社内報_vol.11.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.10.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.10</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.10.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.9.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.9</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.9.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.8.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.8</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.8.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.7.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.7</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.7.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.6.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.6</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.6.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.5.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.5</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.5.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.4.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.4</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.4.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.3.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.3</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.3.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.2.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.2</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.2.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+
+          <div class="newsletter-item" data-pdf-url="doc/社内報/社内報_vol.1.pdf">
+            <div class="newsletter-item-preview">
+              <canvas class="newsletter-item-canvas"></canvas>
+            </div>
+            <div class="newsletter-item-content">
+              <div class="newsletter-item-header">
+                <h3 class="newsletter-item-title">社内報 Vol.1</h3>
+              </div>
+              <a href="doc/社内報/社内報_vol.1.pdf" target="_blank" class="newsletter-item-link">PDFを開く</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

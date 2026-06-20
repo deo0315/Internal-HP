@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>社内ホームページ</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/page-tab.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ヘッダー -->
   <header class="header">
     <div class="header-container">
-      <div class="logo">
-      </div>
+      <div class="logo"></div>
       <nav class="navbar">
         <ul class="nav-list">
           <li><a href="index.html">TOP</a></li>
@@ -26,7 +25,13 @@
               <li><a href="newsletter.html">社内報</a></li>
             </ul>
           </li>
-          <li><a href="news.html">News</a></li>
+          <li class="has-submenu">
+            <a href="news.html" class="submenu-toggle">News</a>
+            <ul class="submenu">
+              <li><a href="news.html">一覧</a></li>
+              <li><a href="news-post.html">投稿</a></li>
+            </ul>
+          </li>
           <li class="has-submenu">
             <a href="#" class="submenu-toggle">業務外</a>
             <ul class="submenu">
@@ -40,13 +45,11 @@
     </div>
   </header>
 
-  <!-- メインコンテンツ -->
   <main class="main-content">
-    <!-- ヒーロー/イメージセクション -->
     <section class="hero-section">
       <div class="hero-content">
         <div class="hero-text">
-          <p class="hero-subtitle">Terminal system社内サイト</p>
+          <p class="hero-subtitle">Terminal system 社内ホームページ</p>
           <h2 class="hero-title">Oase</h2>
           <p class="hero-description">※本サイトは社外秘です</p>
         </div>
@@ -54,7 +57,11 @@
     </section>
   </main>
 
-  <!-- フッター -->
+  <a href="news.html" class="top-latest-news-banner" id="topLatestNewsBanner" aria-label="最新Newsへ移動">
+    <span class="top-latest-news-label">最新News</span>
+    <span class="top-latest-news-title" id="topLatestNewsTitle">読み込み中...</span>
+  </a>
+
   <footer class="footer">
     <p>&copy; 2026 Company Name. All rights reserved.</p>
   </footer>

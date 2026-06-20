@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News投稿 - 社内ホームページ</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/page-tab.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="page-news-post">
+  <header class="header">
+    <div class="header-container">
+      <div class="logo"></div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">TOP</a></li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-toggle">社内資料</a>
+            <ul class="submenu">
+              <li><a href="org.html">組織図</a></li>
+              <li><a href="rules.html">規定</a></li>
+              <li><a href="training.html">教育資料</a></li>
+              <li><a href="newsletter.html">社内報</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="news.html" class="submenu-toggle">News</a>
+            <ul class="submenu">
+              <li><a href="news.html">一覧</a></li>
+              <li><a href="news-post.html">投稿</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-toggle">業務外</a>
+            <ul class="submenu">
+              <li><a href="vlog.html">Vlog</a></li>
+              <li><a href="club.html">部活動</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <a href="#contact" class="contact-btn">CONTACT</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="section page-title-section">
+      <div class="hero-content">
+        <div class="title-banner">
+          <h1 class="page-title">News投稿</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-posts">
+      <article class="news-post">
+        <div class="news-post-inner">
+          <h2 class="news-post-title">投稿フォーム</h2>
+          <form id="newsPostForm" class="news-post-form">
+            <label class="news-form-label" for="newsTitle">タイトル</label>
+            <input id="newsTitle" name="title" class="news-form-input" type="text" required maxlength="120">
+
+            <label class="news-form-label" for="newsCategory">分類</label>
+            <select id="newsCategory" name="category" class="news-form-select" required>
+              <option value="" selected disabled>分類を選択してください</option>
+              <option value="お知らせ">お知らせ</option>
+              <option value="コラム">コラム</option>
+            </select>
+
+            <label class="news-form-label" for="newsContent">内容</label>
+            <textarea id="newsContent" name="content" class="news-form-textarea" rows="8" required maxlength="2000"></textarea>
+
+            <div class="news-post-form-actions">
+              <button type="submit" class="news-post-submit-btn">投稿</button>
+            </div>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Company Name. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
