@@ -428,10 +428,10 @@ body.page-news {
 
 .news-post-inner {
   position: relative;
-  padding: 2.5rem 2rem;
-  background: url("../images/news-panel.png") no-repeat center top;
-  background-size: cover;
-  border-radius: 24px;
+  padding: 3rem 3rem 4rem 3rem;
+  background: url("../images/news-panel.png") no-repeat center;
+  background-size: 100% auto;
+  min-height: 280px;
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
 }
 
